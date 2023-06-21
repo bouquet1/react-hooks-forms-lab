@@ -25,7 +25,7 @@ function ShoppingList({ items, setItems }) {
 
   //create onItemFormSubmit as a callback and pass it as a prop to ItemForm
   function onItemFormSubmit(newItem) {
-    setItems(...items, newItem); //create a new array with spread operator -nondestructive-
+    setItems([...items, newItem]); //create a new array with spread operator -nondestructive-
   }
 
   return (
